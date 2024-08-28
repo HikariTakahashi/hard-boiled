@@ -1,9 +1,17 @@
+// Arduino Uno R4ではVarSpeedServoライブラリが使用できない。
+
+#include <VarSpeedServo.h>
+VarSpeedServo myservo;
+ 
 void setup() {
-  pinMode(13, OUTPUT);
-}
+  
+  myservo.attach(13);
+  
+} 
+ 
 void loop() {
-  digitalWrite(13, HIGH);
-  delay(250);
-  digitalWrite(13, LOW);
-  delay(250);
+  
+  myservo.write(0, 45, true);
+  myservo.write(180, 45, true);
+  
 }
