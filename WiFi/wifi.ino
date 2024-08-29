@@ -5,8 +5,8 @@
 LiquidCrystal_I2C lcd(0x3F, 16, 2);
 
 // SSID及びPASSはコピペする際に必ず消去してください。個人情報です。
-#define SECRET_SSID "1319-Network"
-#define SECRET_PASS "ymks1319"
+#define SECRET_SSID ""
+#define SECRET_PASS ""
 
 void setup() {
     Serial.begin(9600);
